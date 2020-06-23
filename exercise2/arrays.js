@@ -1,4 +1,4 @@
-const nums = [10,23,3,4,5,2,1];
+ const nums = [10,23,3,4,5,2,1];
 const greetings = ["hello","howdy","hallo","hola","bonjour","ciao","أهلا"];
 const binaries = [0,1,1,1,0,0,0,1,1,1,1,1,0,1,0,0,1,0];
 

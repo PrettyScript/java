@@ -1,25 +1,29 @@
 package exercise2;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 
 class Arrays {
     //Take the arrays.js file, and refactor the code into Java in this file.
-    int[] nums = {};
-    String[] greetings;
-    boolean[] binaries;
-
     public static void printNums(int[] nums) {
-        for (int num : nums) {
-            System.out.println(num);
+        ArrayList<Integer> numsList = new ArrayList<>();
+        for(int num : nums) {
+            numsList.add(num);
         }
+        numsList.forEach(num -> System.out.println(num));
     }
+
     public static void printGreetings(String[] greetings) {
-        for (String g : greetings) {
-            System.out.println(g);
+        ArrayList<String> greetingList = new ArrayList<>();
+        for(String greeting: greetings) {
+            greetingList.add(greeting);
         }
+        greetingList.forEach(greeting -> System.out.println(greeting));
     }
+
     public static void printBinaries(int[] binaries) {
+        ArrayList<Integer> binariesList = new ArrayList<>();
         for(int binary : binaries) {
+            binariesList.add(binary);
             if(binary == 0) {
                 System.out.println("false");
             } else {
